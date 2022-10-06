@@ -25,7 +25,7 @@ class Employee:
             self.output+= (" and recieves a commission for " + str(contracts) + " contract(s) at " + str(commissionPay) + "/contract")
         else:
             self.bonus = commissionPay
-            self.output+= (" and recieves a bonus commission of " + str(commissionPay))
+            self.output+= (" and receives a bonus commission of " + str(commissionPay))
         
 
     def get_pay(self):
