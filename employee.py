@@ -1,8 +1,6 @@
 """Employee pay calculator."""
 """ENTER YOUR SOLUTION HERE!"""
-import re
 
-from pandas import notnull
 
 class Employee:
     def __init__(self, name, contractType, salary, hours, ):
