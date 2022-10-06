@@ -15,7 +15,7 @@ class Employee:
         if contractType == "monthly":
             self.output += (name + " works on a " + contractType + " salary of " + str(salary))
         elif contractType == "hourly":
-            self.output += (name + " works on a contract of " + str(hours) + " at " + str(salary) + "/ hour")
+            self.output += (name + " works on a contract of " + str(hours) + " hours at " + str(salary) + "/hour")
 
 
     def bonus_calc(self, commissionType, commissionPay, contracts):
