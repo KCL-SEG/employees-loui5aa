@@ -13,19 +13,19 @@ class Employee:
         self.commissionType = None
         self.output = ""
         if contractType == "monthly":
-            self.output += (name + " works on a " + contractType + " salary of " + salary)
+            self.output += (name + " works on a " + contractType + " salary of " + str(salary))
         elif contractType == "hourly":
-            self.output += (name + " works on a contract of " + hours + " at " + salary + "/ hour")
+            self.output += (name + " works on a contract of " + str(hours) + " at " + str(salary) + "/ hour")
 
 
     def bonus_calc(self, commissionType, commissionPay, contracts):
         if commissionType=="contract":
             self.commissionType = commissionType
             self.bonus = commissionPay * contracts
-            self.output+= (" and recieves a commission for " + contracts + " contract(s) at " + commissionPay + "/contract")
+            self.output+= (" and recieves a commission for " + str(contracts) + " contract(s) at " + str(commissionPay) + "/contract")
         else:
             self.bonus = commissionPay
-            self.output+= (" and recieves a bonus commission of " + commissionPay)
+            self.output+= (" and recieves a bonus commission of " + str(commissionPay))
 
     def get_pay(self):
         if self.contractType == "hourly":
@@ -39,7 +39,7 @@ class Employee:
 
     def __str__(self):
         self.get_pay(self)
-        self.output(". Their total pay is " + self.pay +".")
+        self.output(". Their total pay is " + str(self.pay) +".")
 
         
 
