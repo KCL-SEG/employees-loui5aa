@@ -38,7 +38,7 @@ class Employee:
         
 
     def __str__(self):
-        self.get_pay(self)
+        self.get_pay()
         self.output(". Their total pay is " + str(self.pay) +".")
 
         
