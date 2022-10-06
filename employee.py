@@ -22,7 +22,7 @@ class Employee:
         if commissionType=="contract":
             self.commissionType = commissionType
             self.bonus = commissionPay * contracts
-            self.output+= (" and recieves a commission for " + str(contracts) + " contract(s) at " + str(commissionPay) + "/contract")
+            self.output+= (" and receives a commission for " + str(contracts) + " contract(s) at " + str(commissionPay) + "/contract")
         else:
             self.bonus = commissionPay
             self.output+= (" and receives a bonus commission of " + str(commissionPay))
